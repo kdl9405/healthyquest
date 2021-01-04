@@ -1,24 +1,12 @@
-com/OMe/web/indexController.java
- com.OMe.web.indexController
-com/OMe/Application.java
- com.OMe.Application
+com/OMe/domain/progress/Progress.java
+ com.OMe.domain.progress.Progress
 com/OMe/domain/character/CharacterRepository.java
  com.OMe.domain.character.CharacterRepository
 com/OMe/domain/character/Character.java
  com.OMe.domain.character.Character
-com/OMe/domain/user/UserRepository.java
- com.OMe.domain.user.UserRepository
-com/OMe/domain/user/User.java
- com.OMe.domain.user.User
-com/OMe/domain/progress/Progress.java
- com.OMe.domain.progress.Progress
-com/OMe/domain/equipment/Equipment.java
- com.OMe.domain.equipment.Equipment
-com/OMe/domain/quest/Quest.java
- com.OMe.domain.quest.Quest
 com/OMe/domain/equipment/EquipmentRepository.java
  com.OMe.domain.equipment.EquipmentRepository
-com/OMe/domain/progress/ProgressRepository.java
- com.OMe.domain.progress.ProgressRepository
-com/OMe/domain/quest/QuestRepository.java
- com.OMe.domain.quest.QuestRepository
+com/OMe/domain/equipment/Equipment.java
+ com.OMe.domain.equipment.Equipment
+com/OMe/Application.java
+ com.OMe.Application

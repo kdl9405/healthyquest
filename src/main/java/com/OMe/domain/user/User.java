@@ -1,11 +1,13 @@
 package com.OMe.domain.user;
 
 
+import com.OMe.domain.character.Character;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Optional;
 
 @Getter
 @NoArgsConstructor
@@ -44,6 +46,13 @@ public class User {
     public User update(String name, String picture){
         this.name = name;
         this.picture = picture;
+
+        return this;
+    }
+
+    public User characterUpdate(Character character){
+
+        this.character = character;
 
         return this;
     }

@@ -28,14 +28,14 @@ public class indexController {
         return "index";
     }
 
-    @GetMapping("/character/create/{id}")
-    public String characterCreate(@PathVariable Long id, Model model){
+    @GetMapping("/avatar/create/{id}")
+    public String avatarCreate(@PathVariable Long id, Model model){
 
         UserResponseDto dto = userService.findById(id);
 
         model.addAttribute("user",dto);
 
-        return "character";
+        return "avatar";
     }
 
     @GetMapping("/map")

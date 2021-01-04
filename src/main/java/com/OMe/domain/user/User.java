@@ -1,7 +1,7 @@
 package com.OMe.domain.user;
 
 
-import com.OMe.domain.character.Character;
+import com.OMe.domain.avatar.Avatar;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -29,7 +29,7 @@ public class User {
 
     @ManyToOne(targetEntity = User.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "character_id")
-    private Character character;
+    private Avatar avatar;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
@@ -50,9 +50,9 @@ public class User {
         return this;
     }
 
-    public User characterUpdate(Character character){
+    public User avatarUpdate(Avatar avatar){
 
-        this.character = character;
+        this.avatar = avatar;
 
         return this;
     }

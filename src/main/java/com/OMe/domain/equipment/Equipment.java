@@ -21,10 +21,14 @@ public class Equipment {
     @Column
     private String qr_code;
 
+    @Column
+    private String description;
+
     @Builder
-    public Equipment(String name, String qr_code){
+    public Equipment(String name, String qr_code, String description){
         this.name = name;
         this.qr_code = qr_code;
+        this.description = description;
     }
 }
 

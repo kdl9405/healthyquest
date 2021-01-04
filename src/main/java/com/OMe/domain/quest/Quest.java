@@ -17,7 +17,7 @@ public class Quest {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(targetEntity = Equipment.class, fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "equipment_id")
     private Equipment equipment;
 
@@ -27,10 +27,14 @@ public class Quest {
     @Column
     private String content;
 
+    @Column
+    private Integer point;
+
     @Builder
-    public Quest(Equipment equipment, Integer stage, String content){
+    public Quest(Equipment equipment, Integer stage, String content, Integer point){
         this.equipment = equipment;
         this.stage = stage;
         this.content = content;
+        this.point = point;
     }
 }

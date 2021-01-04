@@ -29,7 +29,7 @@ public class User {
     @Column
     private String picture;
 
-    @ManyToOne(targetEntity = User.class, fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @NotFound(action = NotFoundAction.IGNORE)
     @JoinColumn(name = "avatar_id")
     @ColumnDefault("null")

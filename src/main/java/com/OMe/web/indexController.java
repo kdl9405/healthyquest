@@ -48,8 +48,10 @@ public class indexController {
     }
 
     @GetMapping("/exercise/start")
-    public String exerciseStart(Model model){
+    public String exerciseStart(@LoginUser SessionUser user,Model model){
 
+        model.addAttribute("user",user);
+        model.addAttribute("avatar", userService.findById(user.getId()).getAvatar());
         model.addAttribute("equipments", equipmentService.findAll());
 
         return "equip";

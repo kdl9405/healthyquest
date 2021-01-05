@@ -56,12 +56,14 @@
                                 <ul class="menu-area-main">
 
                                     {{#avatar}}
-                                        <li> <a href="#">{{user.name}}님 안녕하세요 </a> </li>
+                                        {{#user}}
+                                        <li> <a href="#">{{name}}님 안녕하세요 </a> </li>
                                         <li class="active"> <a href="/">Home</a> </li>
-                                        <li> <a href="/avatar/create/{{user.id}}">Character </a> </li>
+                                        <li> <a href="/avatar/create/{{id}}">Character </a> </li>
                                         <li> <a href="/logout">Start </a> </li>
                                         <li> <a href="contact.html">Ranking </a> </li>
                                         <li> <a href="/logout">Logout </a> </li>
+                                        {{/user}}
                                     {{/avatar}}
 
                                     {{^avatar}}

@@ -9,7 +9,7 @@
     }
 }
 /*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
- @media only screen and (min-width: 300px) and (max-width: 767px) {
+ @media only screen and (min-width: 356px) and (max-width: 767px) {
      .logo {
          text-align: center;
     }
@@ -78,7 +78,7 @@
     }
 }
 /*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
- @media only screen and (min-width: 280px) and (max-width: 300px) {
+ @media only screen and (min-width: 280px) and (max-width: 355px) {
      .cart-content-right {
          padding-bottom: 5px;
     }
@@ -207,7 +207,7 @@
         font-size: 13px;
     }
 }
- @media (min-width: 576px) and (max-width: 767px){
+ @media (min-width: 356px) and (max-width: 767px){
 
 
 .logo{
@@ -247,7 +247,7 @@
          margin-bottom: 25px;
     }
 }
- @media (max-width: 575px) {
+ @media (max-width: 355px) {
      .header {
         padding-bottom: 0;
     }

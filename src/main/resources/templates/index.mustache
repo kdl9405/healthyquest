@@ -32,10 +32,13 @@
                                     <a class="main_bt" href="/avatar/create/{{user.id}}" role="button">Change Character</a>
                                 {{/avatar}}
 
+                            {{/user}}
+                            {{#user}}
                                 {{^avatar}}
                                     <a class="main_bt" href="/avatar/create/{{user.id}}" role="button">Create Character</a>
                                 {{/avatar}}
                             {{/user}}
+
                         </div>
                         </div>
 

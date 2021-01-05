@@ -689,7 +689,6 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  border: 1px solid #ededed;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
 }
@@ -744,7 +743,6 @@ section {
 
 .services .icon-box:hover {
   background: #e96b56;
-  border-color: #e96b56;
 }
 
 .services .icon-box:hover .icon {

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
 
 @RequiredArgsConstructor
 @Controller
@@ -27,5 +28,15 @@ public class questController {
         return "quest";
     }
 
+    @GetMapping("/equip/quest/{eid}/{qid}")
+    public String confirmQuest(@PathVariable Long eid, @PathVariable Long qid, @LoginUser SessionUser user, Model model){
+
+        model.addAttribute("user",user);
+        model.addAttribute("equipment", equipmentService.findById(eid));
+        model.addAttribute("quest", questService.findById(qid));
+
+
+        return "confirmquest";
+    }
 
 }

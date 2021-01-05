@@ -16,12 +16,20 @@
                             <tbody id="tbody">
                             {{#equipments}}
 
-                            <div class="col-lg-5 col-md-6 d-flex align-items-stretch" style="background:url('/img/Request.jpg') no-repeat;">
-                                <div class="icon-box" style=" cursor: pointer;" onclick="/equip/quest/{{id}};">
+                                <div class="col-lg-1 col-md-5 d-flex align-items-stretch" ></div>
+
+
+                                <div class="col-lg-4 col-md-5 d-flex align-items-stretch" style="background:url('/img/Request.jpg') no-repeat;">
+                                    <a href="/equip/quest/{{id}}">
+                                    <div class="icon-box">
                                     <h4>{{name}}</h4>
                                     <p>{{description}}</p>
+
                                 </div>
+                                    </a>
                             </div>
+                                <div class="col-lg-1 col-md-5 d-flex align-items-stretch" ></div>
+
                             {{/equipments}}
                             </tbody>
                         </div>

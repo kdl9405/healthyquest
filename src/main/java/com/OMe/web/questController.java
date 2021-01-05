@@ -28,7 +28,7 @@ public class questController {
         return "quest";
     }
 
-    @GetMapping("/equip/quest/{eid}/{qid}")
+    @GetMapping("/equip/quest/confirm/{eid}/{qid}")
     public String confirmQuest(@PathVariable Long eid, @PathVariable Long qid, @LoginUser SessionUser user, Model model){
 
         model.addAttribute("user",user);

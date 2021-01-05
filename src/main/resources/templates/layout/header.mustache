@@ -45,7 +45,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                     <div class="full">
                         <div class="center-desk">
-                            <div class="logo"> <a href="index.html"><img src="/img/logo.jpg" alt="#"></a> </div>
+                            <div class="logo"> <a href="/"><img src="/img/logo.jpg" alt="#"></a> </div>
                         </div>
                     </div>
                 </div>
@@ -54,9 +54,19 @@
                         <div class="limit-box">
                             <nav class="main-menu">
                                 <ul class="menu-area-main">
-                                    <li class="active"> <a href="index.html">Home</a> </li>
-                                    <li> <a href="contact.html">Login </a> </li>
+                                    {{#user}}
+                                        <li> <a>{{name}}님 안녕하세요^^ </a> </li>
+                                    {{/user}}
+
+                                    <li class="active"> <a href="/">Home</a> </li>
+                                    {{^user}}
+                                        <li> <a href="/oauth2/authorization/google">Google Login </a> </li>
+                                    {{/user}}
+
+                                    {{#user}}
+                                    <li> <a href="/logout">Logout </a> </li>
                                     <li> <a href="contact.html">Ranking </a> </li>
+                                    {{/user}}
                                     <li class="mean-last"> <a href="#"><img src="/img/search_icon.png" alt="#" /></a> </li>
                                     <li class="mean-last"> <a href="#"><img src="/img/top-icon.png" alt="#" /></a> </li>
                                 </ul>

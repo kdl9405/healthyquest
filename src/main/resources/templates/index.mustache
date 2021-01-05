@@ -28,8 +28,8 @@
                             {{#user}} <!-- 존재하면 -->
                                 <a class="main_bt" href="/logout" role="button">Logout</a>
 
-                                {{#avatar}}
-                                    <a class="main_bt" href="/avatar/create/{{user.id}}" role="button">Change Character</a>
+                                {{^avatar}}
+                                    <a class="main_bt" href="/avatar/create/{{user.id}}" role="button">Create Character</a>
                                 {{/avatar}}
 
                             {{/user}}

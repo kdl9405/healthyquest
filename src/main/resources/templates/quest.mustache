@@ -1,43 +1,66 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title> O-Me, Healthy Quest </title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-</head>
-<body>
-<h1> O-Me, Healthy Quest 퀘스트 </h1>
+{{>layout/header}}
 
-<div class="col-md-4">
-    <tbody id="tbody">
-    {{#quests}}
+<section class="slider_section">
+    <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background:url('/img/room.jpg') no-repeat;">
 
-        <article class="entry">
+                <div class="container">
 
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="/img/about.jpg" class="img-fluid" alt="">
+                        </div>
 
-            <h2 class="entry-title">
-                <a>{{point}}</a>
-            </h2>
+                        <div class="col-lg-1"></div>
 
-            <div class="entry-content">
-                <p>
-                    {{content}}
-                </p>
+                        <div class="col-lg-4 pt-4 pt-lg-0 content">
+                            <h3>Ray's Page는</h3>
+                            <p class="font-italic">
+                                개인 & 학습용 블로그 및 포트폴리오로 활용 예정!
+                            </p>
+
+                        <tbody id="tbody">
+                            {{#quests}}
+                                <a href="#">
+                                    <div class="icon-box">
+                                        <h4>{{point}}</h4>
+                                        <p>{{content}}</p>
+
+                                    </div>
+                                </a>
+                            {{/quests}}
+                        </tbody>
+
+                        </div>
+
+                        <div class="col-lg-1"></div>
+
+                    </div>
+
+                </div>
+
 
             </div>
+        </div>
 
-        </article><!-- End blog entry -->
-    {{/quests}}
-    </tbody>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-</div>
+</section>
 
-<script src="/js/jquery.min.js"></script>
-<script src="/js/popper.min.js"></script>
-<script src="/js/bootstrap.bundle.min.js"></script>
-<script src="/js/jquery-3.0.0.min.js"></script>
-<script src="/js/plugin.js"></script>
+<!-- footer -->
+<footer>
 
-<script src="/js/app/avatar.js"></script>
+</footer>
+<!-- end footer -->
 
-</body>
-</html>
+
+{{>layout/footer}}

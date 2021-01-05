@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> O-Me, Healthy Quest </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1> O-Me, Healthy Quest 기구선택 </h1>
+
+<div class="col-md-4">
+    <tbody id="tbody">
+    {{#equipments}}
+
+        <article class="entry">
+
+
+            <h2 class="entry-title">
+                <a href="/equip/quest/{{id}}">{{name}}</a>
+            </h2>
+
+            <div class="entry-meta">
+                <ul>
+                    <li class="d-flex align-items-center"><i class="icofont-user"></i> 사진? </li>
+                </ul>
+            </div>
+
+            <div class="entry-content">
+                <p>
+                    {{description}}
+                </p>
+
+            </div>
+
+        </article><!-- End blog entry -->
+    {{/equipments}}
+    </tbody>
+
+</div>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/jquery-3.0.0.min.js"></script>
+<script src="/js/plugin.js"></script>
+
+<script src="/js/app/avatar.js"></script>
+
+</body>
+</html>

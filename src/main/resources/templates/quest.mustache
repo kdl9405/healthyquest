@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> O-Me, Healthy Quest </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1> O-Me, Healthy Quest 퀘스트 </h1>
+
+<div class="col-md-4">
+    <tbody id="tbody">
+    {{#quests}}
+
+        <article class="entry">
+
+
+            <h2 class="entry-title">
+                <a>{{point}}</a>
+            </h2>
+
+            <div class="entry-content">
+                <p>
+                    {{content}}
+                </p>
+
+            </div>
+
+        </article><!-- End blog entry -->
+    {{/quests}}
+    </tbody>
+
+</div>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/jquery-3.0.0.min.js"></script>
+<script src="/js/plugin.js"></script>
+
+<script src="/js/app/avatar.js"></script>
+
+</body>
+</html>

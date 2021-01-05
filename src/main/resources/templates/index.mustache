@@ -33,11 +33,13 @@
                                 {{/avatar}}
 
                             {{/user}}
-                            {{#user}}
+
                                 {{^avatar}}
+                                    {{#user}}
                                     <a class="main_bt" href="/avatar/create/{{user.id}}" role="button">Create Character</a>
+                                    {{/user}}
                                 {{/avatar}}
-                            {{/user}}
+
 
                         </div>
                         </div>

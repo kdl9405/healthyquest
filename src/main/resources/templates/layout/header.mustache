@@ -66,7 +66,7 @@
 
                                     {{^avatar}}
                                         {{#user}}
-                                        <li> <a style="color: #ffffff">{{name}}님 안녕하세요 </a> </li>
+                                        <li> <a href="#">{{name}}님 안녕하세요 </a> </li>
                                         <li class="active"> <a href="/">Home</a> </li>
                                         <li> <a href="/avatar/create/{{id}}">Character </a> </li>
                                         <li> <a href="contact.html">Ranking </a> </li>
@@ -74,7 +74,7 @@
                                         {{/user}}
 
                                         {{^user}}
-                                            <li> <a style="color: #ffffff">로그인을 해주세요 </a> </li>
+                                            <li> <a href="#">로그인을 해주세요 </a> </li>
                                             <li> <a href="/oauth2/authorization/google">Google Login </a> </li>
 
                                         {{/user}}

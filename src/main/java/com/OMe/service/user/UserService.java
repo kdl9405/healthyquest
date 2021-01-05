@@ -28,7 +28,7 @@ public class UserService {
 
 
     public UserResponseDto findById(Long id){
-        User entity = userRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 게시글이 없습니다. id = "+ id));
+        User entity = userRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 사용자가 없습니다. id = "+ id));
 
         return new UserResponseDto(entity);
     }

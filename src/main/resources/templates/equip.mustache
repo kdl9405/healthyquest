@@ -1,49 +1,68 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title> O-Me, Healthy Quest </title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-</head>
-<body>
-<h1> O-Me, Healthy Quest 기구선택 </h1>
+{{>layout/header}}
 
-<div class="col-md-4">
-    <tbody id="tbody">
-    {{#equipments}}
+<section class="slider_section">
+    <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" >
+                <img class="first-slide" src="/img/room.jpg" alt="First slide">
 
-        <article class="entry">
+                <div class="container">
+                    <div class="carousel-caption relative">
+                        <div class="col-md-4">
+                            <tbody id="tbody">
+                            {{#equipments}}
+
+                                <article class="entry">
 
 
-            <h2 class="entry-title">
-                <a href="/equip/quest/{{id}}">{{name}}</a>
-            </h2>
+                                    <h2 class="entry-title">
+                                        <a href="/equip/quest/{{id}}">{{name}}</a>
+                                    </h2>
 
-            <div class="entry-meta">
-                <ul>
-                    <li class="d-flex align-items-center"><i class="icofont-user"></i> 사진? </li>
-                </ul>
+                                    <div class="entry-meta">
+                                        <ul>
+                                            <li class="d-flex align-items-center"><i class="icofont-user"></i> 사진? </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="entry-content">
+                                        <p>
+                                            {{description}}
+                                        </p>
+
+                                    </div>
+
+                                </article><!-- End blog entry -->
+                            {{/equipments}}
+                            </tbody>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
             </div>
+        </div>
 
-            <div class="entry-content">
-                <p>
-                    {{description}}
-                </p>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-            </div>
+</section>
 
-        </article><!-- End blog entry -->
-    {{/equipments}}
-    </tbody>
+<!-- footer -->
+<footer>
 
-</div>
+</footer>
+<!-- end footer -->
 
-<script src="/js/jquery.min.js"></script>
-<script src="/js/popper.min.js"></script>
-<script src="/js/bootstrap.bundle.min.js"></script>
-<script src="/js/jquery-3.0.0.min.js"></script>
-<script src="/js/plugin.js"></script>
 
-<script src="/js/app/avatar.js"></script>
-
-</body>
-</html>
+{{>layout/footer}}

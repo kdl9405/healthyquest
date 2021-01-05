@@ -54,19 +54,33 @@
                         <div class="limit-box">
                             <nav class="main-menu">
                                 <ul class="menu-area-main">
-                                    {{#user}}
-                                        <li> <a>{{name}}님 안녕하세요^^ </a> </li>
-                                    {{/user}}
 
-                                    <li class="active"> <a href="/">Home</a> </li>
-                                    {{^user}}
-                                        <li> <a href="/oauth2/authorization/google">Google Login </a> </li>
-                                    {{/user}}
+                                    {{#avatar}}
+                                        <li> <a style="color: #ffffff">{{user.name}}님 안녕하세요 </a> </li>
+                                        <li class="active"> <a href="/">Home</a> </li>
+                                        <li> <a href="/avatar/create/{{user.id}}">Character </a> </li>
+                                        <li> <a href="/logout">Start </a> </li>
+                                        <li> <a href="contact.html">Ranking </a> </li>
+                                        <li> <a href="/logout">Logout </a> </li>
+                                    {{/avatar}}
 
-                                    {{#user}}
-                                    <li> <a href="/logout">Logout </a> </li>
-                                    <li> <a href="contact.html">Ranking </a> </li>
-                                    {{/user}}
+                                    {{^avatar}}
+                                        {{#user}}
+                                        <li> <a style="color: #ffffff">{{name}}님 안녕하세요 </a> </li>
+                                        <li class="active"> <a href="/">Home</a> </li>
+                                        <li> <a href="/avatar/create/{{id}}">Character </a> </li>
+                                        <li> <a href="contact.html">Ranking </a> </li>
+                                        <li> <a href="/logout">Logout </a> </li>
+                                        {{/user}}
+
+                                        {{^user}}
+                                            <li> <a style="color: #ffffff">로그인을 해주세요 </a> </li>
+                                            <li> <a href="/oauth2/authorization/google">Google Login </a> </li>
+
+                                        {{/user}}
+                                    {{/avatar}}
+
+
                                     <li class="mean-last"> <a href="#"><img src="/img/search_icon.png" alt="#" /></a> </li>
                                     <li class="mean-last"> <a href="#"><img src="/img/top-icon.png" alt="#" /></a> </li>
                                 </ul>

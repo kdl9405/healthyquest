@@ -47,10 +47,10 @@ public class questController {
         return "confirmquest";
     }
 
-    @GetMapping("/progress/update/{qid}")
-    public String progressUpdate(@PathVariable Long qid, @LoginUser SessionUser user, Model model){
+    @GetMapping("/progress/update/{point}")
+    public String progressUpdate(@PathVariable Integer point, @LoginUser SessionUser user, Model model){
 
-        userService.PointUpdate(user.getId(),questService.findById(qid).getPoint());
+        userService.PointUpdate(user.getId(),point);
 
         model.addAttribute("user",user);
 

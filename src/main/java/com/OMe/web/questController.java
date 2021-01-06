@@ -50,14 +50,21 @@ public class questController {
     @GetMapping("/progress/update/{point}")
     public String progressUpdate(@PathVariable Integer point, @LoginUser SessionUser user, Model model){
 
+        System.out.println(">>>>>>>>>>>>>>>>>>111 "+point);
+
         userService.pointUpdate(user.getId(),point);
 
         model.addAttribute("user",user);
+
+        System.out.println(">>>>>>>>>>>>>>>>>>222 "+user.getPoint());
+
 
         List<UserResponseDto> users = userService.findByAllDese();
         for (int i = 0; i<users.size(); i++){
             if(users.get(i).getId() == user.getId()){
                 model.addAttribute("rank",i+1);
+                System.out.println(">>>>>>>>>>>>>>>>>>333 "+i+1);
+
                 break;
             }
         }

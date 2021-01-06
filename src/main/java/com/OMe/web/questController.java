@@ -63,8 +63,8 @@ public class questController {
         for (int i = 0; i<users.size(); i++){
             if(users.get(i).getId() == user.getId()){
                 int j = i+1;
-                model.addAttribute("rank",j);
-                System.out.println(">>>>>>>>>>>>>>>>>>333 "+j);
+                model.addAttribute("rank",i);
+                System.out.println(">>>>>>>>>>>>>>>>>>333 "+i);
 
                 break;
             }

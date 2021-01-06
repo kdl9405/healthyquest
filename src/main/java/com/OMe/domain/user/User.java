@@ -39,18 +39,29 @@ public class User {
     @Column(nullable = false)
     private Role role;
 
+    @Column
+    private Integer point;
+
     @Builder
-    public User(String name, String email , String picture ,Role role, Avatar avatar){
+    public User(String name, String email , String picture ,Role role, Avatar avatar, Integer point){
         this.name = name;
         this.email = email;
         this.picture = picture;
         this.role = role;
         this.avatar = avatar;
+        this.point = point;
     }
 
     public User update(String name, String picture){
         this.name = name;
         this.picture = picture;
+
+        return this;
+    }
+
+    public User pointUpdate(Integer point){
+
+        this.point += point;
 
         return this;
     }

@@ -2,7 +2,9 @@ package com.OMe.web.dto.quest;
 
 import com.OMe.domain.equipment.Equipment;
 import com.OMe.domain.quest.Quest;
+import lombok.Getter;
 
+@Getter
 public class QuestResponseDto {
 
     private Long id;

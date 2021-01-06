@@ -62,8 +62,9 @@ public class questController {
         List<UserResponseDto> users = userService.findByAllDese();
         for (int i = 0; i<users.size(); i++){
             if(users.get(i).getId() == user.getId()){
-                model.addAttribute("rank",i+1);
-                System.out.println(">>>>>>>>>>>>>>>>>>333 "+i+1);
+                int j = i+1;
+                model.addAttribute("rank",j);
+                System.out.println(">>>>>>>>>>>>>>>>>>333 "+j);
 
                 break;
             }

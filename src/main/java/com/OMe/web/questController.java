@@ -47,7 +47,7 @@ public class questController {
         return "confirmquest";
     }
 
-    @GetMapping("/progress/update/{{quest}}")
+    @GetMapping("/progress/update/{qid}")
     public String progressUpdate(@PathVariable Long qid, @LoginUser SessionUser user, Model model){
 
         userService.PointUpdate(user.getId(),questService.findById(qid).getPoint());

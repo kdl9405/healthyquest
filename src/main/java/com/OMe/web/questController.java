@@ -48,7 +48,7 @@ public class questController {
     }
 
     @GetMapping("/progress/update/{{qid}}")
-    public String progressUpdate(@PathVariable Long eid, @PathVariable Long qid, @LoginUser SessionUser user, Model model){
+    public String progressUpdate(@PathVariable Long qid, @LoginUser SessionUser user, Model model){
 
         userService.PointUpdate(user.getId(),questService.findById(qid).getPoint());
 

@@ -30,7 +30,7 @@ public class UserService {
     }
 
     @Transactional
-    public Long PointUpdate(Long userId, Integer point){
+    public Long pointUpdate(Long userId, Integer point){
 
         User user = userRepository.findById(userId).orElseThrow(() -> new IllegalArgumentException("로그인된 계정이 없습니다. id = "+ userId));
 

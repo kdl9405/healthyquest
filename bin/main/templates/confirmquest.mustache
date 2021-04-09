@@ -1,0 +1,61 @@
+{{>layout/header}}
+
+<section class="slider_section">
+    <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background:url('/img/room.jpg') no-repeat;">
+
+                <div class="container">
+
+                    <br>
+                    <br>
+
+                    <div class="col-lg-6" style="text-align: center;">
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <input type="text" class="form-control" placeholder="{{equipment.name}}" />
+                                    <div class="validate"></div>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="{{quest.content}}"  />
+                                <div class="validate"></div>
+                            </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="정말, 확실히 다 했나요??"  />
+                            <div class="validate"></div>
+                        </div>
+
+                        <a href="/progress/update/{{quest.point}}" role="button" class="main_bt">확인</a>
+                        <a href="/equip/quest/{{equipment.id}}" role="button" class="main_bt">취소</a>
+
+
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- footer -->
+<footer>
+
+</footer>
+<!-- end footer -->
+
+
+{{>layout/footer}}
+

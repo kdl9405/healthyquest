@@ -1,0 +1,103 @@
+{{>layout/header}}
+
+
+<section class="slider_section">
+    <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" >
+                <img class="first-slide" src="/img/room.jpg" alt="First slide">
+
+                <div class="container">
+                    <div class="carousel-caption relative">
+                        <section id="featured" class="featured">
+
+
+                            <div class="container">
+
+                                <div class="row">
+                                    <div style="float:left; width:20%;">
+                                        <div>
+                                            <img src="/img/avatar1.png">
+                                            <h3><a></a></h3>
+                                            <h3><a><b>1번 캐릭터</b></a></h3>
+                                        </div>
+                                    </div>
+                                    <div style="float:left; width:20%;">
+                                        <div>
+                                            <img src="/img/avatar2.png">
+                                            <h3><a></a></h3>
+                                            <h3><a><b>2번 캐릭터</b></a></h3>
+                                        </div>
+                                    </div>
+                                    <div style="float:left; width:20%;">
+                                        <div >
+                                            <img src="/img/avatar3.png">
+                                            <h3><a></a></h3>
+                                            <h3><a><b>3번 캐릭터</b></a></h3>
+                                        </div>
+                                    </div>
+                                    <div style="float:right; width:30%;">
+
+                                        <div>
+
+                                            <h2><strong class="cur">캐릭터를 골라주세요</strong></h2>
+                                        </div>
+
+                                        <div>
+
+                                        <select id="avatar" style="width: 200px;
+padding: .8em .5em;
+border: 1px solid #999;
+font-weight:bold;
+font-family: inherit;
+background: url('arrow.jpg') no-repeat 95% 50%;
+border-radius: 0px;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;" >
+
+                                                <option value="1" selected> <b> 1번 </b> </option>
+                                                <option value="2" ><b> 2번 </b> </option>
+                                                <option value="3" ><b> 3번 </b> </option>
+
+                                            </select>
+                                        </div>
+
+                                            <div>
+
+                                                <br>
+                                                <br>
+
+                                            <button type="button" class="main_bt" id="btn-update">생성</button>
+                                        <a href="/" role="button" class="main_bt">취소</a>
+                                            </div>
+
+                                    </div>
+                                    </div>
+
+
+                            </div>
+
+
+
+
+                        </section><!-- End Featured Section -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- footer -->
+<footer>
+
+</footer>
+
+
+{{>layout/footer}}
+
+<script src="/js/app/avatar.js"></script>
